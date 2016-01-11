@@ -1,0 +1,16 @@
+EXAMPLE 
+
+SELECT TITLE FROM BOOKS WHERE AUTOHOR = "J" AND FIRST_PUBLISHED <2000;
+
+You can compare multiple values in a WHERE condition. If you want to test that both conditions are true use the AND keyword, or either conditions are true use the OR keyword.
+
+SELECT <columns> FROM <table> WHERE <condition 1> AND <condition 2> ...;
+SELECT <columns> FROM <table> WHERE <condition 1> OR <condition 2> ...;
+Examples:
+
+
+SELECT * FROM products WHERE category = "Games Consoles" AND price < 400;
+
+
+
+SELECT country FROM countries WHERE population < 1000000 OR population > 100000000;

@@ -1,0 +1,1 @@
+select * from loans where return_by > "2014-3-12" and returned_on is null ;

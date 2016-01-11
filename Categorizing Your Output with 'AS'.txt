@@ -1,0 +1,2 @@
+SELECT <column name> AS <alias> FROM <table name>;
+SELECT <column name> <alias> FROM <table name>;
