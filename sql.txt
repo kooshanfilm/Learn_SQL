@@ -1,4 +1,5 @@
-SQL Used
+Learn everything about SQL:
+SQLlite:
 
 SELECT * FROM <table name>;
 The asterisk or star symbol (*) means all columns.
