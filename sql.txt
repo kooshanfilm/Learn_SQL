@@ -1,14 +1,41 @@
 Learn everything about SQL:
 SQLlite:
 
-SELECT * FROM <table name>;
-The asterisk or star symbol (*) means all columns.
+how to create a db :
+	sqllite3 practice.sql
+	create table tbl1(one varchar(10), two smallint);
+	   create table koushan (a int, b real ,c text);
+	   insert into koushan values(1,2,3);
+	   this is same as :
+	   		insert into koushan values(1,2,3)
 
-The semi-colon (;) terminates the statement like a period in sentence or question mark in a question.
+	checking the type of row:
+		select a , typeof(a) from koushan;
 
-Examples:
+	what is the blob type:
+		is a picture but in sql is text type
 
-SELECT * FROM books;
-SELECT * FROM products;
-SELECT * FROM users;
-SELECT * FROM countries;
+	if and elese in sql:
+
+		select
+		case when a then "true" else "false" end as boolA,
+		case when b then "false" else "true" end as boolb
+		from booltest;
+
+	date and time:
+		insert into time_1 values(datetime('now'),datetime('now','localtime'));
+
+	adding from one table to another table:
+		insert into koushan SELECT * from time_1;
+
+	update:
+		update tbl1 set one ='TesT'
+
+	select :
+		select "hello world"; >> echo
+		select "hello world" as name;
+		select one as '1', two as '2' from tbl1
+		subselect :
+			remember you should always read the sub select first
+
+
